@@ -1,0 +1,25 @@
+
+Solicitar al usuario que ingrese el peso en kg.
+Guardar el peso como "peso".
+
+if peso <= 30:
+    if  peso <= 10:
+        volumen diario = peso * 100
+    elif, si peso <= 20:
+        volumen diario = (10 * 100) + ((peso - 10) * 50)
+    elif:
+        volumen diario = (10 * 100) + (10 * 50) + ((peso - 20) * 20)
+    print "Método utilizado: Holliday-Segar"
+elif:
+    superficie corporal = ((peso * 4) + 7) / (peso + 90)
+    print ("Método utilizado: Superficie Corporal")
+    solicitar al usuario que elija entre 1500 o 2000 para multiplicar la superficie corporal.
+    guardar lo solicitado como factor_superficie.
+    volumen diario = superficie corporal * factor_superficie
+
+mantenimiento = volumen diario / 24
+m_mas_m2 = mantenimiento * 1.5
+
+print("Volumen diario necesario: " + Volumen diario + " cc")
+print ("Mantenimiento: " + Mantenimiento + " cc/hr")
+print ("m+m/2: " + m_mas_m2 + " cc/hr")
