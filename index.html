@@ -6,28 +6,45 @@
     <title>Calculadora de Hidratación</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
-
   </head>
   <body>
     <div id="contenedor">
       <div id="calculadora">
-        <div class = "contenido">
+        <div class="contenido">
           <h1>Hidratación Basal</h1>
-          <p> Completa todos los datos </p>
-          <input class = "item" id = "peso" type="number" placeholder="Peso en kg" />
-          <p class = "item" id = "error"> Debe completar todos los datos </p>
-          <button class = "item" id = "calcular">Calcular</button>
-          <p class = "item resultado" id = "flu"> 71cc/h</p>
-          <p class = "item resultado" id = "man"> m+m/2 : 105 cc/h</p>
-          <p class = "item resultado" id = "metodo"> Metodo </p>
+          <p>Completa todos los datos</p>
+          <input
+            class="item"
+            id="peso"
+            type="number"
+            placeholder="Peso en kg"
+          />
+          <p class="item" id="error">Debe completar todos los datos</p>
+          <button class="item" id="calcular">Calcular</button>
+          <form id="formularioOpciones" style="display: none" class = "formularioOpciones">
+            <p>Seleccione el factor para multiplicar la superficie corporal:</p>
+            <input type="checkbox" id="factor1500" name="factor" value="1500" />
+            <label for="factor1500">1500</label><br />
+
+            <input type="checkbox" id="factor2000" name="factor" value="2000" />
+            <label for="factor2000">2000</label><br />
+
+            <input type="button" value="Enviar" id="enviarFactor" />
+          </form>
+          <p class="item resultado" id="flu">71cc/h</p>
+          <p class="item resultado" id="man">m+m/2 : 105 cc/h</p>
+          <p class="item resultado" id="metodo">Metodo</p>
         </div>
       </div>
       <div id="detalle">
-        <div class = "contenido">
+        <div class="contenido">
           <h1>¿Como se calcula?</h1>
           <ul>
             <li>de 0 kg a 10 kg, se calcula 100cc por cada kilo</li>
-            <li>Se suman 50cc por cada kilo de peso por arriba de 10 kg, hasta 20kg</li>
+            <li>
+              Se suman 50cc por cada kilo de peso por arriba de 10 kg, hasta
+              20kg
+            </li>
             <li>De 20 kg para arriba, se suman 20cc por cada kilo adicional</li>
           </ul>
         </div>

@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
-h1 {
-    color: green;
-}
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -29,7 +25,7 @@ body{
 }
 
 #detalle{
-    background: #FF416C;
+    background: #e20404cb;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
@@ -57,8 +53,8 @@ button {
 	font-weight: bold;
 	padding: 12px 45px;
 	border-radius: 30px;
-	background-color: #FF416C;
-	border: 1px solid #FF416C;
+	background-color: #e20404cb;
+	border: 1px solid #e20404cb;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -68,6 +64,7 @@ button {
 button:active {
 	transform: scale(0.95);
 }
+
 
 #error{
     color: red;
@@ -82,5 +79,44 @@ button:active {
     margin-bottom: 5px;
     display: none;
 }
+#formularioOpciones {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  #formularioOpciones label {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  #formularioOpciones input[type="checkbox"] {
+    display: none;
+  }
+
+  #formularioOpciones input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+
+  #formularioOpciones input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+  }
+
+  #formularioOpciones input[type="checkbox"]:checked + label:before {
+    background-color: #007bff;
+  }
+
 
 
